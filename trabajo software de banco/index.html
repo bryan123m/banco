@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>software banco</title>
+
+</head>
+
+<body>
+
+    <section id="contenedorprincipal">
+        <div id="ContenedorIniciar">
+
+            <h1 id="title">Bienvenido</h1>
+
+            <input type="text" placeholder="Ingrece Cedula" id="Icedula">
+            <input type="text" placeholder="Ingrece Nombre" id="Inombre">
+            <button onclick="iniciarSesion()">Iniciar Sesion</button>
+            <button onclick="informes()">Ver informes</button>
+
+        </div>
+        <div id="ContenedorRegistro">
+
+            <h1>Registro</h1>
+
+            <input type="text" placeholder="Ingrece Nombre" id="Rnombre">
+            <input type="text" placeholder="Ingrece Cedula" id="Rcedula">
+            <input type="text" placeholder="Ingrece el valor inical" id="Rvalor">
+            <button onclick="Registro()">Registrarse</button>
+
+        </div>
+        <br>
+        <button onclick="cambiarformulario(this, true)" id="Biniciar">Iniciar Sesion</button>
+        <button onclick="cambiarformulario(this, false)" id="Bregistrar">Registrarse</button>
+
+        <div id="funciones">
+
+            <P id="nom_cliente"></P>
+
+            <p id="valorcliente"></p>
+
+            <input type="text" placeholder="Ingresar dinero" id="inputagregar">
+            <input type="text" placeholder="Retirar dinero" id="inputretirar">
+            <div id="estilobotones">
+                <button onclick="agregar()">Ingresar</button>
+                <button onclick="retirar()">Retirar</button>
+            </div>
+        </div>
+        <button onclick="regresar()" id="regreso">Salir</button>
+    </section>
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
